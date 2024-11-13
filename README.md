@@ -41,11 +41,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/Foam.png" width="375px" alt="Foam start pagina">
+  <img src="readme-images/foam.png" width="375px" alt="Foam start pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/FoamMenu.png" width="375px" alt="Foam Menu pagina">
+  <img src="readme-images/foammenu.png" width="375px" alt="Foam Menu pagina">
  
 </details>
 
