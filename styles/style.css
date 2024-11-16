@@ -1,31 +1,224 @@
-/**************/
-/* CSS REMEDY */
-/**************/
+/* scroll naar beneden om jouw code toe te voegen */
+
+/* Simpele CSS Remedy */
+/* naar een idee van Jen Simmons */
+/* github.com/jensimmons/cssremedy */
 *, *::after, *::before {
-  box-sizing:border-box;  
-}
-
-
-
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
-
-
-
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
+	box-sizing:border-box;  
+  }
+  
+  
+  
+  
+  
+  :root {
+	--color-button:white;
+	--background-button:SlateBlue;
+	--shadow-button:inset 0 0 0 .1em white;
+  }
+  
+  
+  
+  
+  
+  /*******************************/
+  /* DE LIJST EN ALGEMEN STYLING */
+  /*******************************/
+  main ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	
+	/* de lijst is een 1-kolom grid */
+	display:grid;
+	/* de kolom is 100% breed */
+	/* maar wordt niet breder dan 20 em */
+	grid-template-columns:min(100%, 20em);
+	/* met wat witruimte */
+	gap:2em;
+  }
+  
+  main li {
+	background-color:white;
+  }
+  
+  main h2 {
+	font-size:1.25em;
+	line-height:1.1em;
+  }
+  
+  main p {
+	line-height:1.1em;
+  }
+	
+  main img {
+	/* met width, height en align-self zo groot als de grid-cel waar hij inzit */
+	/* met object-fit vult de afbeelding de cel in verhouding - plus wat daardoor niet past wordt afgesneden */
+	width:100%;
+	height:auto;
+	align-self:stretch;
+	object-fit:cover;
+	/* de default (inline) van img's overschrijven */
+	display:block;
+  }
+  
+  main button {
+	position:relative;
+	min-height:2.5em;
+	padding:0 .5em;
+	
+	appearance:none;
+	background:var(--background-button);
+	border:none;
+	border-radius:.5rem;
+	/* wit randje om button */
+	box-shadow:var(--shadow-button);
+	
+	font:inherit;
+	color:var(--color-button);
+	
+	cursor:pointer;
+  }
+  
+  main button:active {
+	/* 1px omlaag bij klikken - als feedback */
+	transform:translateY(1px); 
+  }
+  
+  
+  
+  
+  
+  /******************************/
+  /* VIS 1 - plaatje als eerste */
+  /******************************/
+  
+  li {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 3em;
+  }
+  
+  /* naam van vis */
+  h2 {
+	color: black;
+	margin: 5%;
+   /* grid-cel: align-self; */
+	grid-area: 2;
+  }
+  
+  /* afbeeding */
+  img {
+	  
+  }
+  
+  /*****************************/
+  /* VIS 2 - button naast naam */
+  /*****************************/
+  
+  li:nth-of-type(2) {  
+	
+  
+  /* naam van vis */
+  li:nth-of-type(2) h2 {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  /* afbeelding */
+  li:nth-of-type(2) img {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  /* koopknop */
+  li:nth-of-type(2) button {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  
+  
+  
+  
+  /*****************************/
+  /* VIS 3 - button op plaatje */
+  /*****************************/
+  
+  li:nth-of-type(3) {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  
+  /* naam van vis */
+  li:nth-of-type(3) h2 {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  /* afbeelding */
+  li:nth-of-type(3) img {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  /* koopknop */
+  li:nth-of-type(3) button:nth-of-type(1) {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  /* likeknop */
+  li:nth-of-type(3) button:nth-of-type(2) {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  
+  
+  
+  
+  /*****************************************/
+  /* VIS 4 - button naast naam en location */
+  /*****************************************/
+  
+  li:nth-of-type(4) {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  
+  /* naam van vis */
+  li:nth-of-type(4) h2 {
+	margin:.5rem .5rem 0 .5rem;
+	
+  }
+  
+  
+  /* location */
+  li:nth-of-type(4) p {
+	margin:0 .5rem .5rem .5rem;
+	
+	/* JOUW CODE HIER */
+	
+  }
+  
+  
+  /* afbeelding */
+  li:nth-of-type(4) img {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  /* koopknop */
+  li:nth-of-type(4) button:nth-of-type(1) {
+	/* JOUW CODE HIER */
+	
+  }
+  
+  /* likeknop */
+  li:nth-of-type(4) button:nth-of-type(2) {
+	/* JOUW CODE HIER */
+	
+  }
