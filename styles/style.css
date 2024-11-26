@@ -1,224 +1,71 @@
-/* scroll naar beneden om jouw code toe te voegen */
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* Simpele CSS Remedy */
-/* naar een idee van Jen Simmons */
-/* github.com/jensimmons/cssremedy */
-*, *::after, *::before {
-	box-sizing:border-box;  
-  }
-  
-  
-  
-  
-  
-  :root {
-	--color-button:white;
-	--background-button:SlateBlue;
-	--shadow-button:inset 0 0 0 .1em white;
-  }
-  
-  
-  
-  
-  
-  /*******************************/
-  /* DE LIJST EN ALGEMEN STYLING */
-  /*******************************/
-  main ul {
-	margin:0;
-	padding:0;
-	list-style:none;
-	
-	/* de lijst is een 1-kolom grid */
-	display:grid;
-	/* de kolom is 100% breed */
-	/* maar wordt niet breder dan 20 em */
-	grid-template-columns:min(100%, 20em);
-	/* met wat witruimte */
-	gap:2em;
-  }
-  
-  main li {
-	background-color:white;
-  }
-  
-  main h2 {
-	font-size:1.25em;
-	line-height:1.1em;
-  }
-  
-  main p {
-	line-height:1.1em;
-  }
-	
-  main img {
-	/* met width, height en align-self zo groot als de grid-cel waar hij inzit */
-	/* met object-fit vult de afbeelding de cel in verhouding - plus wat daardoor niet past wordt afgesneden */
-	width:100%;
-	height:auto;
-	align-self:stretch;
-	object-fit:cover;
-	/* de default (inline) van img's overschrijven */
-	display:block;
-  }
-  
-  main button {
-	position:relative;
-	min-height:2.5em;
-	padding:0 .5em;
-	
-	appearance:none;
-	background:var(--background-button);
-	border:none;
-	border-radius:.5rem;
-	/* wit randje om button */
-	box-shadow:var(--shadow-button);
-	
-	font:inherit;
-	color:var(--color-button);
-	
-	cursor:pointer;
-  }
-  
-  main button:active {
-	/* 1px omlaag bij klikken - als feedback */
-	transform:translateY(1px); 
-  }
-  
-  
-  
-  
-  
-  /******************************/
-  /* VIS 1 - plaatje als eerste */
-  /******************************/
-  
-  li {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 3em;
-  }
-  
-  /* naam van vis */
-  h2 {
-	color: black;
-	margin: 5%;
-   /* grid-cel: align-self; */
-	grid-area: 2;
-  }
-  
-  /* afbeeding */
-  img {
-	  
-  }
-  
-  /*****************************/
-  /* VIS 2 - button naast naam */
-  /*****************************/
-  
-  li:nth-of-type(2) {  
-	
-  
-  /* naam van vis */
-  li:nth-of-type(2) h2 {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  /* afbeelding */
-  li:nth-of-type(2) img {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  /* koopknop */
-  li:nth-of-type(2) button {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  
-  
-  
-  
-  /*****************************/
-  /* VIS 3 - button op plaatje */
-  /*****************************/
-  
-  li:nth-of-type(3) {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  
-  /* naam van vis */
-  li:nth-of-type(3) h2 {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  /* afbeelding */
-  li:nth-of-type(3) img {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  /* koopknop */
-  li:nth-of-type(3) button:nth-of-type(1) {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  /* likeknop */
-  li:nth-of-type(3) button:nth-of-type(2) {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  
-  
-  
-  
-  /*****************************************/
-  /* VIS 4 - button naast naam en location */
-  /*****************************************/
-  
-  li:nth-of-type(4) {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  
-  /* naam van vis */
-  li:nth-of-type(4) h2 {
-	margin:.5rem .5rem 0 .5rem;
-	
-  }
-  
-  
-  /* location */
-  li:nth-of-type(4) p {
-	margin:0 .5rem .5rem .5rem;
-	
-	/* JOUW CODE HIER */
-	
-  }
-  
-  
-  /* afbeelding */
-  li:nth-of-type(4) img {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  /* koopknop */
-  li:nth-of-type(4) button:nth-of-type(1) {
-	/* JOUW CODE HIER */
-	
-  }
-  
-  /* likeknop */
-  li:nth-of-type(4) button:nth-of-type(2) {
-	/* JOUW CODE HIER */
-	
-  }
+*{
+    margin: 0;
+    text-decoration: none;
+    /*kleuren*/
+--textBlack: #000000;
+--textWhite: #ffffff;
+--primary: #E30613;
+--secondary: #389CC7;
+--tertiary: #FCCB00;
+}
+
+h3 {
+    font-family: 'open Sans',sans-serif;
+    font-size: 45px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--primary);
+
+}
+
+.tentoonstelling {
+    display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 7;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    background-color: #000000;
+    color: var(--textWhite);
+}
+ 
+.highlight { grid-area: 1 / 2 / 5 / 6; }
+.div2 { grid-area: 5 / 2 / 6 / 3; }
+.div3 { grid-area: 5 / 3 / 6 / 4; }
+.div4 { grid-area: 6 / 4 / 7 / 6; }
+.div5 { grid-area: 7 / 2 / 8 / 6; }
+
+.highlight {
+    max-width: 80%;
+    position: relative;
+    
+}
+
+.sidebar {
+    position: sticky;
+    margin:0;
+    padding-inline:2rem;
+    padding-left: 2%;
+    padding-bottom: 5px;
+    writing-mode:vertical-lr;
+    color:white;
+    font-size:4em;
+    font-weight:400;
+    line-height:2rem;
+}
+
+button {
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    color: white;
+    padding: 2em 3em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 2em;
+}
