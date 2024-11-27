@@ -2,6 +2,7 @@
 
 *{
     margin: 0;
+    padding: 0;
     text-decoration: none;
     /*kleuren*/
 --textBlack: #000000;
@@ -20,7 +21,6 @@ nav {
     position: sticky;
     top: 0;
     background-color: var(--primary);
-
 }
 
 .tentoonstelling {
@@ -33,16 +33,28 @@ nav {
     color: var(--textWhite);
 }
  
-.highlight { grid-area: 1 / 2 / 5 / 6; }
-.div2 { grid-area: 5 / 2 / 6 / 3; }
-.div3 { grid-area: 5 / 3 / 6 / 4; }
+.img-highlight { 
+    grid-area: 1 / 2 / 5 / 6; 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tag { grid-area: 5 / 2 / 6 / 3; }
+.date { grid-area: 5 / 3 / 6 / 4; }
 .div4 { grid-area: 6 / 4 / 7 / 6; }
 .div5 { grid-area: 7 / 2 / 8 / 6; }
 
-.highlight {
-    max-width: 80%;
+
+.tag {
+    border-style: solid;
+    border-radius: 1em;
     position: relative;
-    
+    text-align: center;
+    background-color: #ffffff;
+    padding-block: 5px;
+    color:var(--textBlack);
 }
 
 .sidebar {
@@ -68,4 +80,21 @@ button {
     display: inline-block;
     font-size: 16px;
     margin-bottom: 2em;
+}
+
+
+@media (max-width: 768px) {
+    .exhibition-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        text-align: center;
+        align-items: center;
+    }
 }

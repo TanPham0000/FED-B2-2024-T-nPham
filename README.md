@@ -62,6 +62,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Op Accessibe liet ik de website testen om een snel overzicht voormezelf te krijgen.
   De screenreader pakt veel verschillende kopjes niet en is op sommige gevallen niet bruikbaar.
   De hoofdpagina mist een h1
+  
 
 
 </details>
