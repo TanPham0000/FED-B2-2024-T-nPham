@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'open Sans',sans-serif;
     /*kleuren*/
 --textBlack: #000000;
 --textWhite: #ffffff;
@@ -12,9 +13,11 @@
 --tertiary: #FCCB00;
 }
 
-h3 {
+
+
+h2 {
     font-family: 'open Sans',sans-serif;
-    font-size: 45px;
+    font-size: 3em;
 }
 
 nav {
@@ -22,6 +25,13 @@ nav {
     top: 0;
     background-color: var(--primary);
 }
+.label {
+    display: flex;
+    justify-content:left;
+    gap: 1em;
+}
+
+/* Grid gemaakt met gridgenerator */
 
 .tentoonstelling {
     display: grid;
@@ -33,27 +43,20 @@ nav {
     color: var(--textWhite);
 }
  
-.img-highlight { 
-    grid-area: 1 / 2 / 5 / 6; 
+.img-highlight {
     position: relative;
-    width: 100%;
-    height: 100%;
+    max-width: 90%;
+    min-width: 70%;
     object-fit: cover;
 }
 
-.tag { grid-area: 5 / 2 / 6 / 3; }
-.date { grid-area: 5 / 3 / 6 / 4; }
-.div4 { grid-area: 6 / 4 / 7 / 6; }
-.div5 { grid-area: 7 / 2 / 8 / 6; }
-
-
-.tag {
-    border-style: solid;
+.tag { 
+    font-size: 1rem;
+    border: 1px solid black;
+    padding: 5px 10px;
     border-radius: 1em;
-    position: relative;
     text-align: center;
     background-color: #ffffff;
-    padding-block: 5px;
     color:var(--textBlack);
 }
 
@@ -70,11 +73,52 @@ nav {
     line-height:2rem;
 }
 
+.visually_hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.livestream {
+    background-color: #000000;
+    color: var(--textWhite);
+    
+}
+
+.livestream img {
+    overflow: hidden;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.magazine {
+    background-color: var(--secondary);
+}
+
+.support {
+    background-color: #000000;
+    color: var(--textWhite);
+}
+
+
+.artworks {
+    background-color: var(--textWhite);
+}
+
+.visitFoam {
+    background-color: var(--tertiary);
+}
+
 button {
     border: 2px solid #ffffff;
     background-color: #000000;
     color: white;
-    padding: 2em 3em;
+    padding: 1em 1em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -97,4 +141,13 @@ button {
         text-align: center;
         align-items: center;
     }
+}
+
+
+
+footer {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

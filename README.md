@@ -42,11 +42,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/foamHome.jpg" width="375px" alt="Home pagina van Foam">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   About us
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/foamAbout.jpg" width="375px" alt="De about us pagina van Foam">
  
 </details>
 
@@ -62,7 +62,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Op Accessibe liet ik de website testen om een snel overzicht voormezelf te krijgen.
   De screenreader pakt veel verschillende kopjes niet en is op sommige gevallen niet bruikbaar.
   De hoofdpagina mist een h1
+  Gelukkig hebben alle foto's een alt tag
   
+
 
 
 </details>
