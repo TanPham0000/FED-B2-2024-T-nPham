@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: 'open Sans',sans-serif;
+    accent-color: var(--primary);
     /*kleuren*/
 --textBlack: #000000;
 --textWhite: #ffffff;
@@ -13,7 +14,10 @@
 --tertiary: #FCCB00;
 }
 
+body {
+    width: 100vw;
 
+}
 
 h2 {
     font-family: 'open Sans',sans-serif;
@@ -21,33 +25,46 @@ h2 {
 }
 
 nav {
-    position: sticky;
-    top: 0;
+    display: flex;
+    justify-content: center;
     background-color: var(--primary);
+    width: 80%;
+    
 }
+
 .label {
     display: flex;
     justify-content:left;
+    align-items: center;
     gap: 1em;
+    
 }
 
-/* Grid gemaakt met gridgenerator */
-
 .tentoonstelling {
-    display: grid;
-    grid-template-columns: 5;
-    grid-template-rows: 7;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
+    grid-column: 2; /* Align with the image */
+    grid-row: 2; /* Bottom row */
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
     background-color: #000000;
     color: var(--textWhite);
 }
  
-.img-highlight {
-    position: relative;
-    max-width: 90%;
-    min-width: 70%;
+.tentoonstelling img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    grid-column: 2;
+    grid-row: 1; /* Top row */
 }
 
 .tag { 
@@ -63,6 +80,8 @@ nav {
 .sidebar {
     position: sticky;
     margin:0;
+    top: 2em;
+    z-index: 2;
     padding-inline:2rem;
     padding-left: 2%;
     padding-bottom: 5px;
@@ -93,7 +112,6 @@ nav {
     overflow: hidden;
     border-radius: 50%;
     object-fit: cover;
-    
 }
 
 .magazine {
@@ -105,7 +123,6 @@ nav {
     color: var(--textWhite);
 }
 
-
 .artworks {
     background-color: var(--textWhite);
 }
@@ -114,7 +131,7 @@ nav {
     background-color: var(--tertiary);
 }
 
-button {
+a {
     border: 2px solid #ffffff;
     background-color: #000000;
     color: white;
@@ -126,21 +143,8 @@ button {
     margin-bottom: 2em;
 }
 
-
 @media (max-width: 768px) {
-    .exhibition-section {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .content {
-        text-align: center;
-        align-items: center;
-    }
+.tentoonstelling { grid-template-columns: repeat(2, 1fr); }
 }
 
 
