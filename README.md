@@ -82,6 +82,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
+  Hamburger menu klapt naarbenenden open en maakt de achtergrond donker met een zwart vlak
+
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
@@ -113,9 +115,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Navigatie omzetten naar Hamburger menu
+  - Vergeet Grid voor de gehele pagina, alleen gebruiken voor details
+  - Mist een breakdownschets
   - ...
 
 </details>
