@@ -1,21 +1,17 @@
 // JavaScript Document
 console.log("hi");
 
-const menuToggle = document.querySelector('.menu-toggle','.nav-boxes');
+const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav-menu');
-const shadow =document.querySelector('nav')
-
 
 menuToggle.addEventListener('click', () => {
 nav.classList.toggle('open');
 menuToggle.classList.toggle('open');
-shadow.classList.toggle('open');
-  
 });
 
+// Background Change on Section Intersection
 document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('[data-background]');
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {

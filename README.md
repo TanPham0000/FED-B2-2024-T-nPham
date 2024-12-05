@@ -195,9 +195,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Validator checken
+  - Gebruik minder classes en logische class namen
+  - vergeet de Main en Header niet
+  - Focus op de belangrijke dingen zoals het netjes maken van de pagina & sections.
+  - ID scrolling text voor texxt change
+  - Zorg dat de foto's binnen hun container blijft
   - ...
 
 </details>
