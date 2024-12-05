@@ -24,6 +24,8 @@ html{
 
 body {
     width: 100vw;
+    transition: background 1s ease;
+    background: #ffffff;
 }
 
 h2 {
@@ -32,6 +34,11 @@ h2 {
     font-weight: 500;
 }
 
+section {
+    width: 100vw;
+    height: auto;
+    margin-top: 1em;
+}
 
 /* start nav */
 nav {
@@ -40,9 +47,12 @@ nav {
     z-index: 10;
     display: flex;
     flex-direction: column;
+    
     margin: auto;
-    width: 40vw;
+    width: auto;
+    max-height: 46px;
 }
+
 
 .mainNav {
     background: var(--primary);
@@ -50,12 +60,13 @@ nav {
     position: relative;
     margin: auto;
     min-width: 295px;
+    
+    height: auto;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
 /* Navigation Boxes */
@@ -108,10 +119,25 @@ nav {
 .nav {
     display: flex;
     justify-content: space-around;
-    gap: 5em;
-    
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;    
 }
   
+.nav img {
+    height: auto;
+    width: 100px;
+}
+
+.nav a img {
+   
+    width: 35px;
+    height: auto;
+    color: var(--textWhite);
+}
+
 /* Dropdown Menu */
 .nav-menu {
     position: absolute;
@@ -119,7 +145,7 @@ nav {
     left: 0;
     right: 0;
     margin: auto;
-    min-width: 295px;
+    min-width: 125px;
     background: var(--primary);
     padding: 2rem;
     list-style: none;
@@ -138,6 +164,18 @@ nav {
     color: #fff;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.nav-menu .date  {
+    list-style:circle;
+    font-size: 1rem;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 1em;
+    text-align: center;
+    
+    background-color: #ffffff;
+    color:var(--textBlack);
 }
   
 /* Open State for Toggle */
@@ -158,25 +196,25 @@ nav {
     background-color: black;
     padding: 20px;
     gap: 20px;
+    padding-left: 5em;
     background-color: #000000;
-    color: var(--textWhite);
-    
+    color: var(--textWhite); 
 }
 
 .container {
     display: grid; 
-    grid-template-columns: 0.2fr repeat(3fr); 
+    grid-template-columns: 100px repeat(3fr); 
     grid-template-rows: repeat(5fr);
     gap: 0px 0px; 
     margin-top: 0;
     margin: 0 100px 100px 0;
     width: 100%;
     grid-template-areas: 
-      ". IMG IMG IMG"
-      ". IMG IMG IMG"
-      ". IMG IMG IMG"
-      ". label label label"
-      ". text text text"; 
+    ". IMG IMG IMG"
+    ". IMG IMG IMG"
+    ". IMG IMG IMG"
+    ". label label label"
+    ". text text text"; 
 }
 
 .learnmore {
@@ -185,15 +223,9 @@ nav {
     align-items: center;
     gap: 1em;
     grid-area: label;
-    
 }
 
-
 .contentButton {
-    justify-self: stretch;
-    position: relative;
-    grid-area: label;
-    grid-column: span 3;
     border: 2px solid #ffffff;
     background-color: #000000;
     color: white;
@@ -224,6 +256,7 @@ nav {
     padding: 5px 10px;
     border-radius: 1em;
     text-align: center;
+    max-width: fit-content;
     background-color: #ffffff;
     color:var(--textBlack);
 }
@@ -242,18 +275,66 @@ nav {
     font-weight:400;
     line-height:2rem;
 }
+/* programma */
 
+.programma {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    gap: 1em;
+}
+
+.card img {
+    max-height: auto;
+    width: 40vmin;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.card-content:hover {
+    color: var(--primary);
+}
 
 .livestream {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #000000;
     color: var(--textWhite);
-    
+    gap: 1em;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .livestream img {
     overflow: hidden;
     border-radius: 50%;
+    height: 50vmin;
+    margin-top: 1em;
+    display: block;
     object-fit: cover;
+    object-position: center center;
+    padding: 0px;
+    border: medium;
+    min-width: 80%;
+    max-width: 100%;
+    min-height: 80%;
+    max-height: 100%;
 }
 
 .magazine {
@@ -263,19 +344,47 @@ nav {
 .support {
     background-color: #000000;
     color: var(--textWhite);
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding-left: 5em; 
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
-.artworks {
-    background-color: var(--textWhite);
+.support a {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: auto;
+    box-sizing: border-box;
+    margin: 2rem;
+    padding: 2em;
+    gap: 1em;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    color: var(--textWhite);
+}
+
+.selling {
+    
 }
 
 .visitFoam {
     background-color: var(--tertiary);
 }
 
+.visitFoam h3 {
+    font-size: 50px;
+}
+
+/* Verandering achtergrond */
+
+
+
 @media (max-width: 768px) {
 
 }
+
 
 
 
@@ -296,3 +405,4 @@ footer {
     white-space: nowrap;
     width: 1px;
 }
+
