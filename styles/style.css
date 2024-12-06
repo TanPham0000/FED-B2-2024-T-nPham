@@ -228,13 +228,6 @@ nav {
     padding: 2em 2em 2em 2em;
 }
 
-.learnmore {
-    display: flex;
-    justify-content:left;
-    align-items: center;
-    gap: 1em;
-}
-
 .contentButton {
     border: 2px solid #ffffff;
     background-color: #000000;
@@ -243,7 +236,8 @@ nav {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin-bottom: 2em;
+    margin: 2em 2em 0 0 ;
+    
 }
 
 .image-container {
@@ -352,7 +346,7 @@ nav {
     width: 100%;
     height: auto;
     object-fit: cover;
-
+    
 }
 
 .support {
@@ -407,6 +401,7 @@ nav {
 }
 
 /* Responsive */
+/* Mobile */
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
@@ -443,11 +438,15 @@ nav {
     }
 }
 
+/* Desktop */
 
 @media (min-width: 1024px) {
 
     html { 
        overflow-x: hidden;
+    }
+    .tentoonstelling img {
+        width: 500px;
     }
     .programma {
         flex-wrap: wrap; /* Ensure wrapping for multiple rows */
@@ -457,7 +456,7 @@ nav {
         flex: 1 1 calc(33.333% - 2em); 
         /* ChatGPT gegenereerde mediaQ */
     }
-    .learnmore {
+    .contentButton {
         display: none;
     }
 }
@@ -481,6 +480,5 @@ footer {
     position: absolute;
     white-space: nowrap;
     width: 1px;
-    
 }
 
