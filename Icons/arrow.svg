@@ -1,1 +1,12 @@
-<svg width="48" height="20" viewBox="0 0 48 20" fill="none" direction="right" class="sc-2745e7cf-0 iRsFrV"><line x1="47.0907" y1="9.63636" x2="-0.000209779" y2="9.63637" stroke="currentColor" stroke-width="1"></line><path d="M39.818 16.3636L47.0907 9.54545L39.818 2.72727" stroke="currentColor" stroke-width="1" stroke-linejoin="round"></path></svg>
+<svg
+  width="48"
+  height="20"
+  viewBox="0 0 48 20"
+  fill="none"
+  class="arrow-icon"
+  aria-label="arrow pointing right"
+>
+  <title>Arrow pointing right</title>
+  <line x1="47.0907" y1="9.63636" x2="0" y2="9.63637" stroke="black" stroke-width="1"/>
+  <path d="M39.818 16.3636L47.0907 9.54545L39.818 2.72727" stroke="black" stroke-width="1" stroke-linejoin="round"/>
+</svg>
