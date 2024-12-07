@@ -23,7 +23,7 @@
 						<span class="menu-bar"></span>
 						</button>
 						<img src="./images/FoamLogo.svg" alt="foam logo in witte letters">
-						<a href="#"> <img src="./Icons/icons8-search.svg" class="searchIcon" alt="search icon"> </a>
+						<a href="#"> <img src="./icons/icons8-search.svg" class="searchIcon" alt="search icon"> </a>
 					</div>
 
 					<ul class="nav-menu">
@@ -55,7 +55,7 @@
 			<h1 class="visually_hidden">leeg</h1>
 		</section>
 
-		<h2 class="sidebar">programma</h2>
+		<h2 class="sidebar">programme</h2>
 
 		<section class="tentoonstelling" data-background="#ffffff">
 			<div class="label"> 
@@ -68,7 +68,7 @@
 		</section>
 
 			<!--programma-->
-		<section class="programma" data-background="#ffffff">
+		<section class="programma" data-background="#ffffff" data-text="programme">
 			<div class="card" >
 				<img src="./images/ajax-1967-c-paul-huf-mai.webp" alt="">
 				<p class="tag">exhibition at Foam</p>
@@ -83,12 +83,12 @@
 				<h3>Foam 3h: Benjamin Li <span>In Search of Perfect Orange</span></h3>
 				<p class="date">until 1 Dec</p>
 			</div>
-			<section class="card" >
+			<div class="card" >
 				<img src="./images/foam-club-diner-53-low-res-foto-maarten-nauw.webp" alt="">
 				<p class="tag">workshop at Foam</p>
 				<h3>Painting & collage walk-in workshop</h3>
 				<p class="date">until 12 Jan 2025</p>
-			</section>
+			</div>
 		</section>
 
 		<!--livestream-->
@@ -100,7 +100,7 @@
 				<p class="date">11 Dec at 20:00 CET</p>
 		</section>
 
-		<section class="magazine" data-background="#ffffff">
+		<section class="magazine" data-background="#ffffff" data-text="support">
 			<div class="label"> 
 				<img src="./images/41-020-fm66_01_cover_front_lr_01.webp" alt="magazine cover FM66 missing mirror AI hand">
 				<p class="tag">magazine</p>
@@ -113,16 +113,18 @@
 			</div>
 		</section>
 
-		<section class="support" data-background="#000000">
-			<h3>support</h3>
-				<div>
-					<p>our mission to make photography accesible</p> <!-- verandert tekst -->
-					<p></p>
-					<p></p>
-				</div>
-			<img src="./images/support-1.webp" alt="" >
-			<img src="./images/support-2.webp" alt="" >
-			<img src="./images/support-3.webp" alt="" >
+		<section class="support" data-background="#000000" data-text="support">
+			<h2>support</h2>
+			<div class="support-text">
+				<p>our mission to make photography accesible</p>
+				<p>spotlight exceptional talent</p>
+				<p>education that connects with all levels of learning</p>
+			</div>
+			<div class="slider">
+				<img src="./images/support-1.webp" alt="" >
+				<img src="./images/support-2.webp" alt="" >
+				<img src="./images/support-3.webp" alt="" >
+			</div>
 			<div class="text">
 				<p> With your contribution, you'll be a key part of Foam's longevity and will enjoy special benefits as a thank you. Ways you can support us:</p>
 				<a href="#">become a member</a> 
@@ -168,20 +170,27 @@
 		</section>
 		<!-- Footer -->
 		<footer>
-			<p>thank you,</p>
-			<img src="" alt="">
+			<div class="sponsorLogo">
+				<p>thank you,</p>
+				<div class="slider">
+					<img src="./icons/ams.svg" alt="amsterdam logo" >
+					<img src="./icons/foam-members-logo.png" alt="Foam members" >
+					<img src="./icons/foundation.svg" alt="vriendenlotterij logo">
+					<img src="./icons/garantibbva_logo.png" alt="garanti BBVA logo" >
+				</div>
+			</div>
 			<div class="footerLinks">
-				<ul class="">
-					<li><a href=""> Facebook</a></li>
-					<li><a href=""> Twitter</a></li>
-					<li><a href=""> Youtube</a></li>
-					<li><a href=""> Instagram</a></li>
-					<li><a href=""> Tiktok</a></li>
+				<ul>
+					<li><img src="./icons/facebook.svg" aria-label="facebook"></li>
+					<li><img src="./icons/twitter.svg" aria-label="twitter"></li>
+					<li><img src="./icons/youtube.svg" aria-label="youtube"></li>
+					<li><img src="./icons/instagram.svg" aria-label="instagram"></li>
+					<li><img src="./icons/tiktok.svg" aria-label="tiktok"></li>
 				</ul>
 				<ul>
-					<li><a>newsletter<img class="icon" src="" alt="envelop"> </a></li>
-					<li><a>visit us<img class="icon" src="" alt=""> </a></li>
-					<li><a>en<img class="icon" src="" alt=""> </a></li>	
+					<li><a>newsletter<img  src="./icons/envelop.svg" alt="envelop"> </a></li>
+					<li><a>visit us<img src="./icons/pointer.svg" alt=""> </a></li>
+					<li><a>en<img src="./icons/language.svg" alt=""> </a></li>	
 				</ul>
 			</div>
 			<p>privacy policy</p>

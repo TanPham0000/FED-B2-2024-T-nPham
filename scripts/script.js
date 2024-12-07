@@ -19,12 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, {
-    threshold: 0.5
+    threshold: 0.2
   });
 
   sections.forEach(section => observer.observe(section));
 });
 // Source ChatGPT & Bahaa
-
-
-//https://www.youtube.com/watch?v=Jt3A2lNN2aE 21 sep 2022 @hyperplexed
