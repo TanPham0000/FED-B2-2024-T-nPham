@@ -16,6 +16,7 @@
 --primary: #E30613;
 --secondary: #389CC7;
 --tertiary: #FCCB00;
+--accent: #EA580C;
 
 }
 
@@ -25,9 +26,19 @@ html {
 }
 
 body {
-    
     transition: background 1s ease;
     background: #ffffff;
+}
+
+img {
+    object-fit: cover;
+}
+
+h1 {
+    font-family: 'open Sans',sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--textBlack);
 }
 
 h2 {
@@ -36,6 +47,11 @@ h2 {
     font-weight: 500;
 }
 
+p { 
+    font-family: 'open Sans',sans-serif;
+    font-size: 1em;
+    color: var(--textBlack);
+}
 section {
     display: block;
     margin-top: 1em;
@@ -75,30 +91,14 @@ nav {
 
 /* Navigation Boxes */
 
-.nav-boxes {
+.nav-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
 }
   
-.nav-box {
-    background: #000;
-    color: #fff;
-    text-decoration: none;
-    padding: 1em;
-    border: #000000;
-    
-    font-weight: lighter;
-}
-  
-.nav-box:hover {
-    border: white;
-}
 
-.shadow-toggle {
-    box-shadow: 0 0 0 999em rgba(0,0,0,0.8);
-}
 
 /* Toggle Button */
 .menu-toggle {
@@ -120,13 +120,10 @@ nav {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.nav {
+.nav-bar {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 5em;    
+    align-content: space-around;
 }
   
 .nav img {
@@ -141,6 +138,7 @@ nav {
     height: auto;
     color: var(--textWhite);
 }
+
 
 /* Dropdown Menu */
 .nav-menu {
@@ -196,12 +194,27 @@ nav {
 }
 /* End Nav */
 
+.nav-box {
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 1em;
+    border: solid 1px#000000;
+    width: max-content;
+    font-weight: lighter;
+}
+  
+.nav-box:hover {
+    border: white;
+    background-color: #000;
+    color: #fff;
+    transition: 500ms;
+}
 
 /* Content */
 .tentoonstelling {
     display: flex;
     flex-direction: row;
-    
     background-color: #000000;
     color: var(--textWhite);
     padding-left: 5em;
@@ -240,7 +253,7 @@ nav {
     width: 100%;
     text-decoration: none;
     font-size: 16px;
-    margin: 2em 2em 0 2em ;
+    margin: 2em;
 }
 
 .image-container {
@@ -386,21 +399,30 @@ nav {
 .support img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 
 .shop {
     display: flex;
-    justify-content: center;
-    padding: 5em;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em;
+    margin: 3em;
 }
 
 .shop img {
-    max-width: 100%;
-    height: auto;
+    height: fit-content;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
 }
 
-.shop .text {
+.center-text {
+    position: relative;
+    display: flex;
+    height: 5em;
+    justify-content: center;
     align-items: center;
 }
 
@@ -424,12 +446,12 @@ nav {
 }
 
 /* Animation Slider */
-/* Met behulp van chatGPT */
+/* Met behulp van chatGPT waaronder het maken van de keyframes & animatie*/
 
 .slider {
     display: flex;
     position: relative;
-    width: 90%;
+    width: 99%;
     max-width: 700px;
     height: 30em;
 }
@@ -516,6 +538,16 @@ nav {
     .slider {
         width: 100%; 
       }
+
+}
+
+/* Tablet */
+
+@media (min-width: 915px) {
+    
+    .foamMagazine p {
+        width: 55%;
+    }
 }
 
 /* Desktop */
@@ -553,6 +585,9 @@ nav {
         padding: 0 40% 1em 0;
     }
 
+    .foamMagazine p {
+        width:35%;
+    }
 }
 
 
@@ -631,3 +666,80 @@ footer .slider img {
     width: 1px;
 }
 
+/* About page */
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bold {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.introduction h1 {
+    text-align: center;
+}
+
+.introduction img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1em;
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.sectionwrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.foamMagazine {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+    padding: 5em;
+    gap: 1em;
+    background-color: #FCCB00;
+}
+
+.foamMagazine img {
+    position: relative; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Grid met Chatgpt gemaakt*/
+.image-container {
+    display: grid;
+    grid-template-areas: 
+      "img1 img2"
+      "img3 img2";
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 100%;
+}
+
+.magazine1 { grid-area: img1; transform: rotate(-10deg); z-index: 2; max-width: 200px; }
+.magazine2 { grid-area: img2; transform: rotate(5deg); z-index: 1; max-width: 300px; }
+.magazine3 { grid-area: img3; transform: rotate(-5deg); z-index: 0; max-width: 150px; }
