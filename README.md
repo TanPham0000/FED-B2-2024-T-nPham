@@ -173,6 +173,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="./readme-images/eigensitetest3.png" width="375px" alt="alle issue's zijn van linkjes die nergens naartoe gaan">
   <img src="./readme-images/foamtest1.png" width="375px" alt="33% op leesbaarheid">
   <img src="./readme-images/foamtest2.png" width="375px" alt="non compliant">
+  mijn site die doet het al erg goed,
+
 </details>
 
 
@@ -187,7 +189,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   Ik liep tegen een aantal dingen aan, zeker als het ging om verschillende animaties
   Ook was de navigatie nog niet helemaal hoe ik het wou hebben.
-  De validator liet 1 fout zien binnen mijn css, waardoor de grote van een element niet helemaal klopte
+  De validator liet 1 fout zien binnen mijn css, waardoor de grote van een element niet helemaal klopt ook had ik nog niet alle alt tags toegevoegd.
+
   
 
   ### Agenda voor meeting
@@ -223,19 +226,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="./readme-images/homepagina.png" width="375px" alt="homepagina van het foam">
+  Het eerste scherm dat je na de intro ziet.
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb ontzettend veel geleerd, ik heb met deze site zoveel kunnen proberen en experimenteren waardoor mijn begrip van de programeer talen beter zijn geworden. Het gaat heel goed wanneer er een doel is en een site is waar je direct naar kan kijken voor de vormgeving.
+  <img src="./readme-images/Nav.png" width="375px" alt="nav">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik wou hier een functie maken als je muis over de section heen gaat dan zou er een trail aan foto's erachter komen.
+  Ik heb dit effect eerder gezien in een youtube video @Hyperplexed https://www.youtube.com/watch?v=Jt3A2lNN2aE&t=70s 
+  Jammer genoeg ben ik daar niet aan toegekomen
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="./readme-images/geel" width="375px" alt="bummer">
 </details>
 
 
@@ -247,12 +252,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
+ 1. Chatgpt, ik heb aan gpt gevraagd om mijn code na te kijken en of er dubbele/onnodige code tussen zit.
+ Ook heeft het een groot deel mee gedaan aan de javascript. 
+ 2. Bahaa en ik hebben samen gewerkt aan de achtergrond scroll functie
+ 3. https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
+ 4. https://www.youtube.com/watch?v=Qhaz36TZG5Y @fireship
+ 5. https://www.youtube.com/watch?v=PL3Odw-k8W4 @coding2go voor shorthanding code
+ 6. https://www.shecodes.io/athena/33067-how-to-remove-dots-in-an-html-list 
+ 7. https://www.shecodes.io/athena/86970-how-to-hide-an-image-in-css
+ 8. https://www.shecodes.io/athena/21966-how-to-add-a-shadow-to-a-button-in-css
+ 9. https://www.shecodes.io/athena/10151-how-to-change-text-when-clicking-in-javascript
+ 10. https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+ 11. https://dev.to/webdeasy/10-awesome-css-hamburger-menus-1iho
 
 </details>
