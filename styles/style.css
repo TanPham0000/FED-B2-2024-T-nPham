@@ -69,18 +69,19 @@ nav {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: auto;
+    position: sticky;
+    top: 1em;
+    width: 100%;
     height: 46px;
     max-height: 46px;
 }
-
 
 .nav-container {
     background: var(--primary);
     display: flex;
     position: relative;
     margin: auto;
-    min-width: 295px;
+    min-width: 327px;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -98,8 +99,6 @@ nav {
     width: 100%;
 }
   
-
-
 /* Toggle Button */
 .menu-toggle {
     background: none;
@@ -123,17 +122,18 @@ nav {
 .nav-bar {
     display: flex;
     align-items: center;
-    align-content: space-around;
+    flex-direction: row;
+    gap: 4em;
 }
   
-.nav img {
+.nav-bar img {
     display: block;
     height: auto;
     width: 100px;
     max-width: 100%;
 }
 
-.nav a img {
+.nav-bar a img {
     width: 35px;
     height: auto;
     color: var(--textWhite);
@@ -151,6 +151,7 @@ nav {
     max-height: 0;
     min-width: 125px;
     background: var(--primary);
+    z-index: 10;
     padding: 2rem;
     list-style: none;
     display: none; /* Hidden by default */
@@ -192,9 +193,9 @@ nav {
 .menu-toggle.open .menu-bar:nth-child(2) {
     transform: translateY(-5px) rotate(-45deg);
 }
-/* End Nav */
 
 .nav-box {
+    position: relative;
     background: #fff;
     color: #000;
     text-decoration: none;
@@ -203,6 +204,13 @@ nav {
     width: max-content;
     font-weight: lighter;
 }
+
+.nav-boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 0;
+}
   
 .nav-box:hover {
     border: white;
@@ -210,6 +218,7 @@ nav {
     color: #fff;
     transition: 500ms;
 }
+/* End Nav */
 
 /* Content */
 .tentoonstelling {
