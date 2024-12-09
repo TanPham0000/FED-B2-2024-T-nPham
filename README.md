@@ -59,6 +59,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   https://accessibe.com/accessscan?website=https://www.foam.org/nl
+
+  De website van het Foam is Non-compliant
   Op Accessibe liet ik de website testen om een snel overzicht voormezelf te krijgen.
   De screenreader pakt veel verschillende kopjes niet en is op sommige gevallen niet bruikbaar.
   De hoofdpagina mist een h1
@@ -166,8 +168,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  <img src="./readme-images/eigensitetest1.png" width="375px" alt="100% score">
+  <img src="./readme-images/eigensitetest2.png" width="375px" alt="semi compliant">
+  <img src="./readme-images/eigensitetest3.png" width="375px" alt="alle issue's zijn van linkjes die nergens naartoe gaan">
+  <img src="./readme-images/foamtest1.png" width="375px" alt="33% op leesbaarheid">
+  <img src="./readme-images/foamtest2.png" width="375px" alt="non compliant">
 </details>
 
 
@@ -180,8 +185,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Ik liep tegen een aantal dingen aan, zeker als het ging om verschillende animaties
+  Ook was de navigatie nog niet helemaal hoe ik het wou hebben.
+  De validator liet 1 fout zien binnen mijn css, waardoor de grote van een element niet helemaal klopte
+  
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -200,7 +207,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Gebruik minder classes en logische class namen
   - vergeet de Main en Header niet
   - Focus op de belangrijke dingen zoals het netjes maken van de pagina & sections.
-  - ID scrolling text voor texxt change
+  - ID scrolling text voor text change
   - Zorg dat de foto's binnen hun container blijft
   - ...
 
