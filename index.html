@@ -16,36 +16,36 @@
 <!--Hamburger menu-->
 		<header>
 				<nav>
-				<div class="nav-container">
-					<div class="nav-bar" >
-						<button class="menu-toggle"  aria-label="Toggle navigation">
-						<span class="menu-bar"></span>
-						<span class="menu-bar"></span>
-						</button>
-						<a href="./index.html"><img src="./images/FoamLogo.svg" class="logo" alt="foam logo in witte letters"></a>
-						<a href="#"><img src="./icons/search.svg" class="searchIcon" alt="search icon"></a>
-					</div>
+					<div class="nav-container">
+						<div class="nav-bar" >
+							<button class="menu-toggle"  aria-label="Toggle navigation">
+							<span class="menu-bar"></span>
+							<span class="menu-bar"></span>
+							</button>
+							<a href="./index.html" aria-label="Go to Foam homepage"><img src="./images/FoamLogo.svg" class="logo" alt="foam logo in witte letters"></a>
+							<a href="#"><img src="./icons/search.svg" class="searchIcon" alt="search icon"></a>
+						</div>
 
-					<ul class="nav-menu">
-						<li class="date">open today 10:00-18:00</li>
-						<li><a href="#">programme</a></li>
-						<li><a href="#">buy tickets</a></li>
-						<li><a href="#">visit us</a></li>
-						<li><a href="#">learn</a></li>
-						<li><a href="#">explore</a></li>
-						<li><a href="#">magazine</a></li>
-						<li><a href="#">collection</a></li>
-						<li><a href="#">shop</a></li>
-						<li><a href="#">support us</a></li>
-						<li><a href="./about.html">about</a></li>
-					</ul>
-				</div>
-				<div class="nav-boxes">
-					<a href="#" class="nav-box">programme</a>
-					<a href="#" class="nav-box">plan your visit</a>
-					<a href="#" class="nav-box">tickets</a>
-				</div>
-			</nav>	
+						<ul class="nav-menu">
+							<li class="date">open today 10:00-18:00</li>
+							<li><a href="#">programme</a></li>
+							<li><a href="#">buy tickets</a></li>
+							<li><a href="#">visit us</a></li>
+							<li><a href="#">learn</a></li>
+							<li><a href="#">explore</a></li>
+							<li><a href="#">magazine</a></li>
+							<li><a href="#">collection</a></li>
+							<li><a href="#">shop</a></li>
+							<li><a href="#">support us</a></li>
+							<li><a href="./about.html">about</a></li>
+						</ul>
+					</div>
+					<div class="nav-boxes">
+						<a href="#" class="nav-box">programme</a>
+						<a href="#" class="nav-box">plan your visit</a>
+						<a href="#" class="nav-box">tickets</a>
+					</div>
+				</nav>	
 		</header>
 
 		<!--Main content-->
@@ -136,7 +136,7 @@
 			<div class="slider">
 				<img src="./images/foam-publications-ara-guler-a-play-of-light-and-shadow.webp" alt="Ara Guler Book">			
 				<img src="./images/41-020-fm66_01_cover_front_lr_01.webp" alt="Missing Mirror Magazine">
-				<img src="./images/foam-totebag.webp"alt="Foam Tote Bag">					
+				<img src="./images/foam-totebag.webp" alt="Foam Tote Bag">					
 				<img src="./images/foam-editions-isabelle-wenzel.webp" alt="Art Frame">			
 			</div>
 			<div class="center-text">
@@ -161,18 +161,21 @@
 				<img src=""	data-status="inactive" alt="">
 			</div>
 		</section>
-		<!-- Footer -->
-		<footer>
-			<div class="sponsorLogo">
-				<p>thank you,</p>
-				<div class="slider">
-					<img src="./icons/ams.svg" alt="amsterdam logo" >
-					<img src="./icons/foam-members-logo.png" alt="Foam members" >
-					<img src="./icons/foundation.svg" alt="vriendenlotterij logo">
-					<img src="./icons/garantibbva_logo.png" alt="garanti BBVA logo" >
-				</div>
+	</main>
+	<!-- Footer -->
+	<footer>
+		<div class="footer-left">
+			<span>thank you,</span>
+			<div class="footer-logo-slider">
+				<img src="./icons/ams.svg" alt="Amsterdam logo" class="footer-logo active">
+				<img src="./icons/foam-members-logo.png" alt="Foam members" class="footer-logo">
+				<img src="./icons/foundation.svg" alt="Vriendenloterij logo" class="footer-logo">
+				<img src="./icons/garantibbva_logo.png" alt="Garanti BBVA logo" class="footer-logo">
 			</div>
-			<div class="footerLinks">
+		</div>
+	
+		<div class="footer-center">
+			<div class="socialLinks">
 				<ul>
 					<li><img src="./icons/facebook.svg" alt="facebook"></li>
 					<li><img src="./icons/twitter.svg" alt="twitter"></li>
@@ -181,15 +184,18 @@
 					<li><img src="./icons/tiktok.svg" alt="tiktok"></li>
 				</ul>
 				<ul>
-					<li><a>newsletter<img  src="./icons/envelop.svg" alt="envelop"> </a></li>
-					<li><a>visit us<img src="./icons/pointer.svg" alt=""> </a></li>
-					<li><a>en<img src="./icons/language.svg" alt=""> </a></li>	
+					<li><a href="#">newsletter<img src="./icons/envelop.svg" alt="envelope"></a></li>
+					<li><a href="#">visit us<img src="./icons/pointer.svg" alt="location pointer"></a></li>
+					<li><a href="#">en<img src="./icons/language.svg" alt="language selector"></a></li> 
 				</ul>
 			</div>
-			<p>privacy policy</p>
-			<p>© 2024 Foam</p>
-		</footer>
-	</main>
+		</div>
+	
+		<div class="footer-right">
+			<a href="#">privacy policy</a>
+			<span>© 2024 Foam</span>
+		</div>
+	</footer>
 		<script defer src="scripts/script.js"></script>
 </body>
 
