@@ -65,6 +65,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   De screenreader pakt veel verschillende kopjes niet en is op sommige gevallen niet bruikbaar.
   De hoofdpagina mist een h1
   Gelukkig hebben alle foto's een alt tag
+
+  Dit zijn de kansen die ik zie:
+  Interactief toetsenbord
+  Een outline van de elementen die je kan selecteren
+  logische namen voor iconen
+  Een aantal aria labels toevoegen
+  Leesbare tekst grootes
+  
   
 
 
