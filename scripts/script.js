@@ -11,11 +11,19 @@ menuToggle.classList.toggle('open');
 
 // Background Change on Section Intersection
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('[data-background]');
+  const sections = document.querySelectorAll('[data-background-light]');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        document.body.style.backgroundColor = entry.target.getAttribute('data-background');
+        // Check for dark mode
+        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        // Choose the correct background based on mode
+        const bgColor = isDarkMode 
+          ? entry.target.getAttribute('data-background-dark') 
+          : entry.target.getAttribute('data-background-light');
+
+        document.body.style.backgroundColor = bgColor;
       }
     });
   }, {
@@ -24,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(section => observer.observe(section));
 });
+
 // Source ChatGPT & Bahaa
 
 document.addEventListener("DOMContentLoaded", () => {
