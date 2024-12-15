@@ -9,16 +9,24 @@
     box-sizing: border-box;
 }
 
+:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px hsla(0, 100%, 50%, 0.836);
+}
+
 /* Light theme */
-:root {
-    /*kleuren*/
---textBlack: #000000;
---textWhite: #ffffff;
---background: #fff;
---primary: #E30613;
---secondary: #389CC7;
---tertiary: #FCCB00;
---accent: #EA580C;
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+    --textBlack: #000000;
+    --textWhite: #ffffff;
+    --background: #fff;
+    --primary: #E30613;
+    --secondary: #389CC7;
+    --tertiary: #FCCB00;
+    --accent: #EA580C;
+    }
 }
 
 /* Dark Theme */
