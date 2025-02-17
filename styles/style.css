@@ -9,37 +9,15 @@
     box-sizing: border-box;
 }
 
-:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px hsla(0, 100%, 50%, 0.836);
-}
+:root {
+/*kleuren*/
+--textBlack: #000000;
+--textWhite: #ffffff;
+--primary: #E30613;
+--secondary: #389CC7;
+--tertiary: #FCCB00;
+--accent: #EA580C;
 
-/* Light theme */
-
-
-@media (prefers-color-scheme: light) {
-    :root {
-    --textBlack: #000000;
-    --textWhite: #ffffff;
-    --background: #fff;
-    --primary: #E30613;
-    --secondary: #389CC7;
-    --tertiary: #FCCB00;
-    --accent: #EA580C;
-    }
-}
-
-/* Dark Theme */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --textBlack: #ffffff; 
-        --textWhite: #000000;
-        --background: #121212;
-        --primary: #E30613; 
-        --secondary: #317B9F;
-        --tertiary: #ffc832;
-        --accent: #D8540A;
-    }
 }
 
 html {
@@ -49,7 +27,7 @@ html {
 
 body {
     transition: background 1s ease;
-    background: var(--background);
+    background-color: white;
 }
 
 img {
@@ -65,14 +43,12 @@ h1 {
 }
 
 h2 {
-    color: var(--textBlack);
     font-family: 'open Sans',sans-serif;
     font-size: 3em;
     font-weight: 500;
 }
 
 h3 {
-    color: var(--textBlack);
     font-size: 1rem;
 }
 
@@ -83,12 +59,8 @@ ul {
 p { 
     font-family: 'open Sans',sans-serif;
     font-size: 1em;
-    color: var(--textBlack);
 }
 
-a {
-    color: var(--textBlack);
-}
 
 section {
     display: block;
@@ -269,8 +241,7 @@ nav {
 .tentoonstelling {
     display: flex;
     flex-direction: row;
-    background-color: var(--background);
-    color: var(--textWhite);
+    background-color: black;
     padding-left: 5em;
     margin: 1em 0 1em 0;
     position: relative;
@@ -283,11 +254,17 @@ nav {
     object-fit: cover; 
 }
 
+.tentoonstelling .tag {
+    color: var(--textWhite);
+    border-color: var(--textWhite);
+}
+
 .label {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
     align-self:flex-end;
+    color: var(--textWhite);
     flex-wrap: wrap;
     max-width: 100%;
     padding: 2em 2em 2em 2em;
@@ -326,7 +303,7 @@ nav {
 .tag { 
     margin: 2% 2% 2% ;
     font-size: 1rem;
-    border: 1px solid var(--textWhite);
+    border: 1px solid var(--textBlack);
     padding: 5px 10px;
     border-radius: 1em;
     text-align: center;
@@ -397,6 +374,11 @@ nav {
     margin-bottom: 5em;
 }
 
+.livestream .tag {
+    color: var(--textWhite);
+    border-color: var(--textWhite); 
+}
+
 .livestream img {
     display: block;
     overflow: hidden;
@@ -437,7 +419,6 @@ nav {
     margin: 5em 0; 
     padding: 2em 0 2em 5em; 
 }
-
 
 .support a {
     display: flex;

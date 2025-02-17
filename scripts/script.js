@@ -11,19 +11,11 @@ menuToggle.classList.toggle('open');
 
 // Background Change on Section Intersection
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('[data-background-light]');
+  const sections = document.querySelectorAll('[data-background]');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Check for dark mode
-        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        // Choose the correct background based on mode
-        const bgColor = isDarkMode 
-          ? entry.target.getAttribute('data-background-dark') 
-          : entry.target.getAttribute('data-background-light');
-
-        document.body.style.backgroundColor = bgColor;
+        document.body.style.backgroundColor = entry.target.getAttribute('data-background');
       }
     });
   }, {
@@ -32,33 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sections.forEach(section => observer.observe(section));
 });
-
 // Source ChatGPT & Bahaa
-
 document.addEventListener("DOMContentLoaded", () => {
   const logos = document.querySelectorAll(".footer-logo-slider img");
   let currentLogoIndex = 0;
-
   setInterval(() => {
       // Remove the active class from the current logo
       logos[currentLogoIndex].classList.remove("active");
-
       // Move to the next logo
       currentLogoIndex = (currentLogoIndex + 1) % logos.length;
-
       // Add the active class to the next logo
       logos[currentLogoIndex].classList.add("active");
   }, 3000); // Changes every 3 seconds
 });
-
 //Chatgpt heeft me geholpen
-
 const carousel = document.querySelector('.carousel-container');
-
 let isDragging = false;
 let startX;
 let scrollLeft;
-
 // When the user starts dragging
 carousel.addEventListener('mousedown', (e) => {
   isDragging = true;
@@ -66,13 +49,11 @@ carousel.addEventListener('mousedown', (e) => {
   startX = e.pageX - carousel.offsetLeft;
   scrollLeft = carousel.scrollLeft;
 });
-
 // When the user stops dragging
 carousel.addEventListener('mouseup', () => {
   isDragging = false;
   carousel.classList.remove('dragging');
 });
-
 // When the user moves the mouse
 carousel.addEventListener('mousemove', (e) => {
   if (!isDragging) return;
@@ -81,7 +62,6 @@ carousel.addEventListener('mousemove', (e) => {
   const walk = (x - startX) * 2; // Multiply by 2 for faster scrolling
   carousel.scrollLeft = scrollLeft - walk;
 });
-
 // Prevent unwanted drag behavior
 carousel.addEventListener('mouseleave', () => {
   isDragging = false;
