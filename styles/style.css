@@ -357,6 +357,10 @@ nav {
     object-fit: cover;
 }
 
+.card p {
+    color: var(--textBlack);
+}
+
 .card:hover {
     color: var(--primary);
 }
@@ -855,7 +859,7 @@ footer li {
     margin: 0 auto;
     max-width: 100%;
     box-sizing: border-box;
-    height: 50em;
+    height: 100%;
     max-height: 900px;
     list-style: none;
     gap: 5px;
