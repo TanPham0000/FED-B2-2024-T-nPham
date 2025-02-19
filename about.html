@@ -16,36 +16,42 @@
 		<nav>
 			<div class="nav-container">
 				<div class="nav-bar">
-					<button class="menu-toggle"  aria-label="Toggle navigation">
+					<button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation" aria-label="Open menu">
 						<span class="menu-bar"></span>
 						<span class="menu-bar"></span>
 					</button>
-					<a href="./index.html"><img src="./images/FoamLogo.svg" class="logo" alt="foam logo in witte letters"></a>
-					<a href="#"><img src="./icons/search.svg" class="searchIcon" alt="search icon"></a>
+					<a href="./index.html" aria-label="Go to Foam homepage">
+						<img src="./images/FoamLogo.svg" class="logo" alt="Foam logo in white letters">
+					</a>
+					<a href="#" aria-label="Search the website">
+						<img src="./icons/search.svg" class="searchIcon" alt="Search icon">
+					</a>
 				</div>
-
-				<ul class="nav-menu">
-					<li class="date">open today 10:00-18:00</li>
-					<li><a href="#">programme</a></li>
-					<li><a href="#">buy tickets</a></li>
-					<li><a href="#">visit us</a></li>
-					<li><a href="#">learn</a></li>
-					<li><a href="#">explore</a></li>
-					<li><a href="#">magazine</a></li>
-					<li><a href="#">collection</a></li>
-					<li><a href="#">shop</a></li>
-					<li><a href="#">support us</a></li>
-					<li><a href="./about.html">about</a></li>
-				</ul>
+	
+				<nav id="main-navigation" aria-label="Main Navigation">
+					<ul class="nav-menu" aria-hidden="true">
+						<li class="date" aria-hidden="true">Open today 10:00-18:00</li>
+						<li><a href="#" aria-label="View today's programme">Programme</a></li>
+						<li><a href="#" aria-label="Buy tickets online">Buy Tickets</a></li>
+						<li><a href="#" aria-label="Plan your visit">Visit Us</a></li>
+						<li><a href="#" aria-label="Learn more about our programs">Learn</a></li>
+						<li><a href="#" aria-label="Explore our exhibitions">Explore</a></li>
+						<li><a href="#" aria-label="Read our magazine">Magazine</a></li>
+						<li><a href="#" aria-label="Browse our collection">Collection</a></li>
+						<li><a href="#" aria-label="Visit our online shop">Shop</a></li>
+						<li><a href="#" aria-label="Support our mission">Support Us</a></li>
+						<li><a href="./about.html" aria-label="Learn more about us">About</a></li>
+					</ul>
+				</nav>
 			</div>
+	
 			<div class="nav-boxes">
-				<a href="#" class="nav-box">programme</a>
-				<a href="#" class="nav-box">plan your visit</a>
-				<a href="#" class="nav-box">tickets</a>
+				<a href="#" class="nav-box">Programme</a>
+				<a href="#" class="nav-box">Plan your visit</a>
+				<a href="#" class="nav-box">Tickets</a>
 			</div>
-		</nav>	
+		</nav>
 	</header>
-
 
 	<main>
 		<section class="introduction">
@@ -75,7 +81,6 @@
 			</ul>
 		</section>
 		
-			  
 		<section class="sectionwrapper" data-background="#ffffff">			
 			<h2>Exhibitions & activities</h2>
 			<div class="card">
